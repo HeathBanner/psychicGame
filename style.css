@@ -1,0 +1,61 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.tipContainer {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.scoreContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.scoreboard {
+    margin: 40px auto 0px auto;
+    padding: 40px 80px;
+    background: linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%);
+    color: black;    
+    border-radius: 4px;
+    box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 2px 1px -1px rgba(0,0,0,0.12);
+    text-align: center;
+
+}
+
+.guessContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.guessBoard {
+    margin: 40px auto 0px auto;
+    color: purple;   
+    padding: 40px 60px;
+    background: linear-gradient(45deg, #ffbb19 30%, #fcdb0d 90%);
+    color: black;    
+    border-radius: 4px;
+    box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 2px 1px -1px rgba(0,0,0,0.12); 
+    text-align: center;
+}
+
+.logBoard {
+    margin: 40px auto 0px auto;
+    color: purple;   
+    padding: 40px 60px;
+    background: linear-gradient(45deg, #c14fff 30%, #ce73ff 90%);
+    color: black;    
+    border-radius: 4px;
+    box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 2px 1px -1px rgba(0,0,0,0.12); 
+    text-align: center;
+}
+
+#guessPane {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,34 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link type="text" href="logic.js">
-    <link type="stylesheet" href="style.css">
-    <title>Document</title>
-</head>
-<body>
-    <script src="logic.js"></script>
-    <div>
-    <h1>Wins</h1>
-    <span id="wins">0</span>
-    </div>
     
-    <div>
-    <h1>Losses</h1>
-    <span id="losses">0</span>
+    <script src="https://kit.fontawesome.com/aef5133732.js"></script>
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Psychic</title>
+
+</head>
+
+<body>
+
+    <div class="container-fluid">
+
+        <div class="row">
+            <div class="col-12 tipContainer">
+                
+                <h1>Guess a letter by pressing a key on your keyboard!</h1>
+            
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-6 scoreContainer">
+
+                <div class="scoreboard">
+                    <h1>Wins</h1>
+                    <h4 id="wins">0</h4>
+                </div>
+
+            </div>
+            <div class="col-6 scoreContainer">
+                
+                <div class="scoreboard">
+                    <h1>Losses</h1>
+                    <h4 id="losses">0</h4>
+                </div>
+
+            </div>
+        </div>
     </div>
 
-   <div>
-       <h1>Guesses Left</h1>
-       <span id="guesses">10</span>
-   </div>
-   
-    <div>
-        <h1>Guesses</h1>
-        <span id="guessLog"></span>
+    <div class="row">
+        <div class="col-12 guessContainer">
+
+            <div class="guessBoard">
+                <h1>Guesses Left</h1>
+                <h4 id="guesses">10</h4>
+            </div>
+
+        </div>
     </div>
+        <div class="row">
+            <div class="col-12 guessContainer">
+    
+                <div class="logBoard">
+                    <h1>Guesses</h1>
+                    <div id="guessPane">
+                        <h6>
+                            <i class="fas fa-terminal"></i>
+                        </h6>
+                        <h4 id="guessLog"></h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <script src="logic.js"></script>
     
 </body>
 </html>
