@@ -11,6 +11,7 @@ document.onkeyup = function(event) {
     guesses--;
 
     var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
+    console.log(computerGuess)
     var userWins = document.getElementById("wins");
     var userLosses = document.getElementById("losses");
     var guessesLeft = document.getElementById("guesses");
@@ -20,7 +21,7 @@ document.onkeyup = function(event) {
     var guessUpdate = document.getElementById("guessLog");
     guessUpdate.textContent = guessLog;
  
-    if (userGuess === computerGuess) {
+    if (userGuess.toLowerCase() === computerGuess) {
         winScore++;
         userWins.textContent = winScore;
     } 
